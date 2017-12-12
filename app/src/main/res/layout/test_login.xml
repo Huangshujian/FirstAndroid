@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="用户名："
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txUser"
+        android:hint="用户名/手机号/邮箱"
+        android:layout_alignBaseline="@+id/txUser"/>
+
+    <TextView
+        android:id="@+id/txpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txUser"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="密   码："
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edUsername"
+        android:layout_toRightOf="@+id/txpassword"
+        android:layout_alignBaseline="@+id/txpassword"
+        android:hint="请输入密码"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登  陆"
+        android:layout_below="@+id/txpassword"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注  册"
+        android:layout_below="@+id/txpassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="200dp"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txpassword"
+        android:layout_marginTop="150dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:text="用户名："
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:hint="用户名手机号"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/tbpassword"
+                android:text="密    码："
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:id="@+id/edtbpassword"
+                android:hint="请输入密码"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txpassword"
+        android:layout_marginTop="250dp">
+
+        <TableRow>
+            <Button
+                android:text="登  录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"/>
+            <Button
+                android:text="注  册"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"/>
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFirstAPP</string>
+    <string-array name="citys">
+        <item>胡建</item>
+        <item>上海</item>
+        <item>北京</item>
+        <item>四川</item>
+        <item>重庆</item>
+    </string-array>
+</resources>

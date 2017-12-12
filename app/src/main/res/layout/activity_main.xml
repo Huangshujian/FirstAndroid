@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent">
+   <Button
+       android:id="@+id/linerLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="用线性布局实现界面"
+       android:onClick="linerLayout"/>
+
+    <Button
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用相对布局实现界面"
+        android:onClick="relativeLayout"/>
+
+    <Button
+        android:id="@+id/absoluteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用绝对布局实现界面"
+        android:onClick="absoluteLayout"/>
+
+    <Button
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用表格布局实现界面"
+        android:onClick="tableLayout"/>
+
+    <Button
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用网格布局实现界面"
+        android:onClick="tableLayout"/>
+</LinearLayout>
+

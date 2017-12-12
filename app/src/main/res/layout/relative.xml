@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="#0156FF"
+        android:text="BULE" />
+
+    <Button
+        android:id="@+id/Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="#fff000"
+        android:text="YELLOW" />
+
+    <Button
+        android:id="@+id/Center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FF0116"
+        android:text="RED" />
+
+    <!-- 参照物为Left的按钮-->
+    <!-- 以中间小按钮为参照物-->
+    <Button
+        android:id="@+id/Butten3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/Left"
+        android:layout_centerHorizontal="true"
+        android:text="GREEN"
+        android:background="#30FE03"
+        />
+    <!-- 在中间按钮的左边，并且开始于中间按钮在BULE按钮的下面-->
+    <!-- toStratOf要跟toLeftOf一起用？？
+         toEndOf要跟toRightOf一起用？？
+    -->
+    <Button
+        android:id="@+id/Butten1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/Left"
+        android:layout_toLeftOf="@+id/Butten3"
+        android:layout_toStartOf="@+id/Butten3"
+        android:text="GREY"
+        android:background="#8E908E"
+        />
+
+    <Button
+        android:id="@+id/Butten2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Left"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/Butten3"
+        android:layout_toRightOf="@+id/Butten3"
+        android:background="#12D8EE"
+        android:text="WEITH" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:text="VIOLET"
+        android:background="#FF01EA"
+        />
+
+</RelativeLayout>
+
+

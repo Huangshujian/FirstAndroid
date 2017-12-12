@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="4">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:text="用户名："
+        android:layout_columnSpan="1"
+        />
+    <EditText
+        android:id="@+id/username"
+        android:hint="用户名/手机号/邮箱"
+        android:width="280dp"
+        android:layout_columnSpan="3" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:text="输入密码："/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_columnSpan="3"
+        android:hint="请输入密码"
+        android:width="280dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:text="确认密码："/>
+
+    <EditText
+        android:id="@+id/firmpassword"
+        android:hint="请输入密码"
+        android:width="280dp"
+        android:layout_columnSpan="3"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:text="选择性别："
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/manradiobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            />
+
+        <RadioButton
+            android:id="@+id/femenradiobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="选择城市："/>
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_marginTop="10dp"
+        android:layout_columnSpan="3"
+        android:entries="@array/citys"
+        />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="兴趣爱好："/>
+
+    <RadioGroup
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电玩"/>
+        <CheckBox
+            android:id="@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="睡觉"/>
+        <CheckBox
+            android:id="@+id/love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="泡妞"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:onClick="onClick"
+        android:text="注册"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        />
+    <Button
+        android:id="@+id/exitbtn"
+        android:onClick="onClick"
+        android:text="退出"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+         />
+</GridLayout>

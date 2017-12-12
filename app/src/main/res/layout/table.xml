@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:stretchColumns="1">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="left"
+            android:padding="3dp"
+            android:text="复制" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="Ctrl+C" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="left"
+            android:padding="3dp"
+            android:text="打开" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="Ctrl+O" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="left"
+            android:padding="3dp"
+            android:text="粘贴" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="Ctrl+V" />
+    </TableRow>
+</TableLayout>
