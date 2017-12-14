@@ -170,6 +170,7 @@
 	</LinearLayout>
     </code></pre>
 ##### 实验结果
+![] [https://github.com/Huangshujian/FirstAndroid/blob/master/images/linner.png]
 #### 利用相对布局实现如下界面
 ##### 实验代码
 	<pre><code><?xml version="1.0" encoding="utf-8"?>
@@ -246,7 +247,7 @@
 	</RelativeLayout>
 	</code></pre>
 ##### 实验结果
-
+![] [https://github.com/Huangshujian/FirstAndroid/blob/master/images/relative.png]
 #### 利用表格布局实现如下界面
 ##### 实验代码
 	<pre><code>
@@ -299,5 +300,5 @@
 	</TableLayout>
 	</code></pre>
 ##### 实验结果
-
+![] [https://github.com/Huangshujian/FirstAndroid/blob/master/images/table.png]
 
